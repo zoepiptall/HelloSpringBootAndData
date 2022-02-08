@@ -1,0 +1,17 @@
+# yaml (Yaml Ain't Markup Language')
+
+
+server:
+  port: 9025
+
+spring:
+  datasource:
+    url: jdbc:mariadb://database-1.cfvoxmpubq7s.us-east-2.rds.amazonaws.com:3306/project2db
+    username: project2user
+    password: mypassword
+    driver-class-name: org.mariadb.jdbc.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    show-sql: false
+    hibernate:
+      ddl-auto: update
